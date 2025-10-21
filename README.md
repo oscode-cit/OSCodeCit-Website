@@ -1,5 +1,5 @@
 # OSCode CIT Website
-*I AI Generated the Readme file*
+
 The official repository for the OSCode CIT Website - showcasing our community, projects, events, and activities.
 
 ## 🚀 Getting Started
