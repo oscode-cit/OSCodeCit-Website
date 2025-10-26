@@ -61,8 +61,22 @@ html[data-theme='light'] .upcoming-title { color: #0a0a0a; text-shadow: none; }
   line-height: 1.5;
   font-size: 0.95rem;
   white-space: pre-line;
+  /* make long descriptions scrollable */
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 0.25rem; /* room for scrollbar */
 }
 html[data-theme='light'] .upcoming-desc { color: #1a1a1a; }
+
+/* subtle custom scrollbar */
+.upcoming-desc::-webkit-scrollbar { width: 8px; }
+.upcoming-desc::-webkit-scrollbar-track { background: transparent; }
+.upcoming-desc::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border-radius: 8px; }
+html[data-theme='light'] .upcoming-desc::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); }
+
+@media (max-width: 600px) {
+  .upcoming-desc { max-height: 180px; }
+}
 
 .upcoming-actions {
   display: flex;

@@ -55,5 +55,19 @@ html[data-theme='light'] .past-title { color: #0a0a0a; text-shadow: none; }
   color: #d1d1d1; 
   font-size: 0.95rem; 
   line-height: 1.35; 
+  /* make long details scrollable */
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 0.25rem; /* room for scrollbar */
 }
 html[data-theme='light'] .past-detail { color: #1a1a1a; }
+
+/* subtle custom scrollbar */
+.past-detail::-webkit-scrollbar { width: 8px; }
+.past-detail::-webkit-scrollbar-track { background: transparent; }
+.past-detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border-radius: 8px; }
+html[data-theme='light'] .past-detail::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); }
+
+@media (max-width: 600px) {
+  .past-detail { max-height: 180px; }
+}

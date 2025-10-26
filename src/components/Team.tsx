@@ -117,6 +117,22 @@ const Team = () => {
       image: ""
     },
     {
+      name: "Aishwarya Gadela",
+      designation: "Event management team",
+      linkedin: " https://www.linkedin.com/in/aishwarya-gadela-4772b2261",
+      instagram: "https://www.instagram.com/aishwarya_gadela",
+      github: "",
+      image: ""
+    },
+    {
+      name: "Anubhab Ray",
+      designation: "Event management team",
+      linkedin: "https://www.linkedin.com/in/anubhab-ray-058126318",
+      instagram: "https://www.instagram.com/_anubhabray",
+      github: "",
+      image: ""
+    },
+    {
       name: "Punith S",
       designation: "RnD Team",
       linkedin: " https://www.linkedin.com/in/punith-s-484b37323",

@@ -1,21 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OSCode - CIT Chapter</title>
-    <script>
-      (function () {
-        try {
-          var saved = localStorage.getItem('theme');
-          var theme = (saved === 'light' || saved === 'dark') ? saved : 'light';
-          document.documentElement.setAttribute('data-theme', theme);
-        } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
