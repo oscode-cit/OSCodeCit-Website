@@ -1,16 +1,37 @@
 import './Events.css';
+import { Link } from 'react-router-dom';
 import UpcomingEvent from '../components/events/UpcomingEvent';
-import PastEventCard from '../components/events/PastEventCard';
 import inaugurationImg from '../assets/eventsImages/Inauguration.jpg';
 
 const Events = () => {
   const upcomingDesc = `Will be released soon.....`;
 
+  const pastEvents = [
+    {
+      id: 'inauguration',
+      title: 'Inauguration Ceremony',
+      thumbnail: inaugurationImg,
+      isUpcoming: false
+    },
+    {
+      id: 'coming-soon-1',
+      title: 'Coming Soon',
+      thumbnail: '',
+      isUpcoming: false
+    },
+    {
+      id: 'coming-soon-2', 
+      title: 'Coming Soon',
+      thumbnail: '',
+      isUpcoming: false
+    }
+  ];
+
   return (
     <div className="events-page">
       <div className="events-container">
         <h1 className="events-heading">Upcoming Events</h1>
-
+        
         <UpcomingEvent 
           title="Event Details"
           description={upcomingDesc}
@@ -19,20 +40,25 @@ const Events = () => {
         />
 
         <h2 className="events-subheading">Past Events</h2>
-        <div className="past-grid">
-          <PastEventCard 
-            imageUrl = {inaugurationImg}
-            title="Inauguration" 
-            detail={'The Inauguration Ceremony of the OSCode CIT Chapter marked an inspiring milestone for Cambridge Institute of Technology. The event celebrated innovation, collaboration, and the beginning of an exciting journey into the world of open-source coding and technology. The session featured two distinguished guest speakers — Ms. Komal Pal, Senior Software Development Engineer known for her open-source contributions and recognition at Times Square, and Mr. Harsh Singh, Co-founder of OSCode and Software Development Engineer at Amazon. Their session on “Problem Solving with Code: From Real-World Challenges to Meaningful Tech” offered students a deeper understanding of how coding can be used to create impactful real-world solutions. Both speakers shared their professional journeys, experiences, and valuable insights on growth, teamwork, and the importance of community-driven learning in technology.The event, held on 25th September 2025 , witnessed enthusiastic participation from students, faculty members, and tech enthusiasts. The speakers’ words not only motivated aspiring developers to explore open-source contributions but also highlighted the endless possibilities that come with curiosity and consistent learning. The ceremony concluded with an engaging Q&A session. Coordinated by Bharath Kumar S, the event truly reflected OSCode’s vision of bridging the gap between academic learning and real-world coding experience — a promising start to many more impactful events ahead.'} 
-          />
-          <PastEventCard 
-            title="coming soon" 
-            detail={`comimg soon`} 
-          />
-        	<PastEventCard 
-            title="coming soon" 
-            detail={`coming soon`} 
-          />
+        <div className="events-grid">
+          {pastEvents.map((event) => (
+            <Link key={event.id} to={`/event/${event.id}`} className="event-card-link">
+              <div className="event-card past">
+                <div className="event-thumbnail">
+                  {event.thumbnail ? (
+                    <img src={event.thumbnail} alt={event.title} />
+                  ) : (
+                    <div className="event-placeholder">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    </div>
+                  )}
+                </div>
+                <h3 className="event-title">{event.title}</h3>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

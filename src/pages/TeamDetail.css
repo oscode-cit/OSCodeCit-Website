@@ -1,0 +1,133 @@
+.team-detail-page {
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+  background: linear-gradient(145deg, #0a0a0a 0%, #1a0a1a 100%);
+  padding: 2rem 0;
+}
+
+html[data-theme='light'] .team-detail-page {
+  background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.team-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.team-header {
+  margin-bottom: 3rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #0284c7;
+  transform: translateX(-5px);
+}
+
+html[data-theme='light'] .back-link {
+  color: #0a6ea8;
+}
+
+html[data-theme='light'] .back-link:hover {
+  color: #064e7a;
+}
+
+.team-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0ea5e9;
+  text-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+  margin: 0;
+}
+
+html[data-theme='light'] .team-title {
+  color: #0a6ea8;
+  text-shadow: none;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin: 2rem 0 1.5rem;
+  text-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+}
+
+html[data-theme='light'] .section-title {
+  color: #0a0a0a;
+  text-shadow: none;
+}
+
+/* Team Lead Section */
+.team-lead-section {
+  margin-bottom: 3rem;
+}
+
+.team-lead-card-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Team Members Section */
+.team-members-section {
+  margin-bottom: 2rem;
+}
+
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* No Members Section */
+.no-members-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.no-members-text {
+  font-size: 1.2rem;
+  color: #b1b1b1;
+  font-style: italic;
+}
+
+html[data-theme='light'] .no-members-text {
+  color: #2a2a2a;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .team-detail-container {
+    padding: 0 1rem;
+  }
+  
+  .team-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .team-members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .team-lead-card-wrapper {
+    max-width: 100%;
+  }
+}
