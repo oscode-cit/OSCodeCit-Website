@@ -135,7 +135,7 @@ const TeamDetail = () => {
       title: 'Research & Development Team',
       lead: {
         name: "S Nishaanth",
-        designation: "RnD Team Lead",
+        designation: "R&D Team Lead",
         linkedin: "https://www.linkedin.com/in/s-nishaanth-3b70b6319",
         instagram: "https://www.instagram.com/zen0n_28",
         github: "",
@@ -144,7 +144,7 @@ const TeamDetail = () => {
       members: [
         {
           name: "Punith S",
-          designation: "RnD Team Member",
+          designation: "R&D Team Member",
           linkedin: " https://www.linkedin.com/in/punith-s-484b37323",
           instagram: "",
           github: "",
@@ -152,7 +152,7 @@ const TeamDetail = () => {
         },
         {
           name: "Chaganti Santosh",
-          designation: "RnD Team Member",
+          designation: "R&D Team Member",
           linkedin: "https://www.linkedin.com/in/santosh-chaganti-334551343",
           instagram: "",
           github: "",
@@ -160,7 +160,7 @@ const TeamDetail = () => {
         },
         {
           name: "Pushkar Kulkarni",
-          designation: "RnD Team Member",
+          designation: "R&D Team Member",
           linkedin: "https://www.linkedin.com/in/pushkar-kulkarni-118324341",
           instagram: "https://www.instagram.com/pushkar_7777",
           github: "",
@@ -168,7 +168,7 @@ const TeamDetail = () => {
         },
         {
           name: "Nevin R Philip",
-          designation: "RnD Team Member",
+          designation: "R&D Team Member",
           linkedin: "https://www.linkedin.com/in/nevin-r-philip-932530311",
           instagram: "https://www.instagram.com/nev19_10",
           github: "",

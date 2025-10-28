@@ -80,7 +80,7 @@ const AboutUs = () => {
     },
     {
       name: "S Nishaanth",
-      designation: "RnD Team Lead",
+      designation: "R&D Team Lead",
       linkedin: "https://www.linkedin.com/in/s-nishaanth-3b70b6319",
       instagram: "https://www.instagram.com/zen0n_28",
       github: "",

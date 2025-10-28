@@ -142,7 +142,7 @@ const Team = () => {
     },
     {
       name: "Chaganti Santosh",
-      designation: "RnD Team",
+      designation: "R&D Team",
       linkedin: "https://www.linkedin.com/in/santosh-chaganti-334551343",
       instagram: "",
       github: "",
